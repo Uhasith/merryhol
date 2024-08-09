@@ -13,8 +13,11 @@
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+        @wireUiScripts
     </head>
-    <body class="font-sans antialiased">
+    <body class="font-sans antialiased" x-data>
+         <x-wui-notifications />
         <div class="min-h-screen bg-gray-100">
             <livewire:layout.navigation />
 
